@@ -30,3 +30,9 @@ gradient.colors = arrayColors
 view.layer.insertSublayer(gradient, atIndex: 0)
 ```
 
+## Create Dictionary from plist
+
+```swift
+let path = NSBundle.mainBundle().pathForResource("samplePlist", ofType: "plist")
+let dict = NSDictionary(contentsOfFile: path)
+```
